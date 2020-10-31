@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Santiago_Quishpe_Examen.MainPage">
+
+    <StackLayout>
+        <Label Text="Bienvenidos" TextColor="Blue" HorizontalOptions="Center" FontSize="30">
+        </Label>
+        <Image Source="LOGO.png" WidthRequest="100" HeightRequest="100"></Image>
+
+        <Entry x:Name="txtUser"
+               Placeholder="Ingrese Usuario">
+        </Entry>
+        <Entry x:Name="txtPas"
+               Placeholder="Ingrese Clave"
+               IsEnabled="True">
+        </Entry>
+
+        <Button x:Name="btnReg"
+                Text="Iniciar"
+                Clicked="btnReg_Clicked">
+        </Button>
+        
+    </StackLayout>
+
+</ContentPage>
